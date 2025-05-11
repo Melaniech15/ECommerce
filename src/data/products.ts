@@ -11,7 +11,9 @@ export const products: Product[] = [
         "url": "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-12-1.jpg",
         "_id": "img4"
       }
-    ]
+    ],
+    model: '',
+    category: ''
   },
   {
     "_id": "0002",
@@ -23,7 +25,9 @@ export const products: Product[] = [
         "url": "https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-13-ultra-1.jpg",
         "_id": "img5"
       }
-    ]
+    ],
+    model: '',
+    category: ''
   },
   {
     "_id": "0003",
@@ -35,7 +39,9 @@ export const products: Product[] = [
         "url": "https://fdn2.gsmarena.com/vv/pics/asus/asus-rog-phone-7-1.jpg",
         "_id": "img8"
       }
-    ]
+    ],
+    model: '',
+    category: ''
   },
   {
     "_id": "0004",
@@ -47,7 +53,9 @@ export const products: Product[] = [
         "url": "https://fdn2.gsmarena.com/vv/pics/sony/sony-xperia-1-v-1.jpg",
         "_id": "img9"
       }
-    ]
+    ],
+    model: '',
+    category: ''
   },
   {
     "_id": "0005",
@@ -59,7 +67,9 @@ export const products: Product[] = [
         "url": "https://fdn2.gsmarena.com/vv/pics/nokia/nokia-xr21-1.jpg",
         "_id": "img10"
       }
-    ]
+    ],
+    model: '',
+    category: ''
   },
   {
     "_id": "0006",
@@ -71,7 +81,9 @@ export const products: Product[] = [
         "url": "https://fdn2.gsmarena.com/vv/pics/realme/realme-gt5-pro-1.jpg",
         "_id": "img11"
       }
-    ]
+    ],
+    model: '',
+    category: ''
   },
   {
     "_id": "0007",
@@ -83,7 +95,9 @@ export const products: Product[] = [
         "url": "https://fdn2.gsmarena.com/vv/pics/honor/honor-magic6-pro-1.jpg",
         "_id": "img12"
       }
-    ]
+    ],
+    model: '',
+    category: ''
   },
   {
     "_id": "0008",
@@ -95,7 +109,9 @@ export const products: Product[] = [
         "url": "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-max-1.jpg",
         "_id": "img14"
       }
-    ]
+    ],
+    model: '',
+    category: ''
   },
   {
     "_id": "0009",
@@ -107,6 +123,8 @@ export const products: Product[] = [
         "url": "https://fdn2.gsmarena.com/vv/pics/motorola/motorola-edge-40-pro-1.jpg",
         "_id": "img16"
       }
-    ]
+    ],
+    model: '',
+    category: ''
   }
 ];

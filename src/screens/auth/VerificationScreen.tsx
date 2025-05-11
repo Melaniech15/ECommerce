@@ -18,10 +18,8 @@ export const VerificationScreen = () => {
 
   const handleVerification = () => {
     if (code.length === 4) {
-      // For demo purposes, we'll consider any 4-digit code as valid
-      // In a real app, you would verify with your backend
-      login('eurisko', 'academy2025'); // Set the authenticated state
-      navigation.navigate('App'); // Navigate to main app stack
+      login('eurisko', 'academy2025'); 
+      navigation.navigate('App'); 
     } else {
       Alert.alert('Error', 'Please enter a valid 4-digit code');
     }

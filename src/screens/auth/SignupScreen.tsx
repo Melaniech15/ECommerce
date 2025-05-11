@@ -18,7 +18,6 @@ export const SignupScreen = () => {
   const { theme } = useTheme();
 
   const handleSignup = () => {
-    // In a real app, you would validate and send to backend
     Alert.alert('Success', 'Account created successfully');
     navigation.navigate('Verification');
   };

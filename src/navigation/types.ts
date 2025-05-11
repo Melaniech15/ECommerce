@@ -12,4 +12,6 @@ export type AuthStackParamList = {
 export type AppStackParamList = {
   ProductsList: undefined;
   ProductDetails: { productId: string };
+  Collection: undefined; 
+  Login: undefined; 
 };

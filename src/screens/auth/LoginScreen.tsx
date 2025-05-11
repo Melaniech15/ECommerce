@@ -19,7 +19,6 @@ export const LoginScreen = () => {
 
   const handleLogin = () => {
     if (login(email, password)) {
-      // Success - navigation handled by RootNavigator
     } else {
       Alert.alert('Error', 'Invalid credentials');
     }
@@ -36,7 +35,7 @@ export const LoginScreen = () => {
       <Text style={[styles.title, { color: theme === 'light' ? '#000' : '#fff' }]}>Login</Text>
       
       <FormInput
-        placeholder="Email"
+        placeholder="Username or Email"
         value={email}
         onChangeText={setEmail}
         keyboardType="email-address"
