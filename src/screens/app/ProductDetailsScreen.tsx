@@ -202,7 +202,7 @@ const styles = StyleSheet.create({
     fontSize: 15, 
     marginTop: 8, 
     lineHeight: 22,
-    fontFamily: 'System',
+    fontFamily: 'Times New Roman',
     fontWeight: '400',
   },
   bottomTabs: {
@@ -278,6 +278,7 @@ const styles = StyleSheet.create({
     padding: 12,
   },
   name: {
+    fontFamily: 'Arial',
     fontSize: 18,
     fontWeight: '700',
     marginBottom: 4,

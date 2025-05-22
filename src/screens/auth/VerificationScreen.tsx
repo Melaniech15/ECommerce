@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   title: {
+    fontFamily: 'San Francisco',
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 10,

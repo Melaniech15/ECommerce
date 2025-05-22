@@ -229,6 +229,7 @@ const styles = StyleSheet.create({
     padding: 12,
   },
   name: {
+    fontFamily: 'Arial',
     fontSize: 18,
     fontWeight: '700',
     marginBottom: 4,
@@ -239,6 +240,7 @@ const styles = StyleSheet.create({
     marginBottom: 2,
   },
   description: {
+    fontFamily: 'Times New Roman',
     fontSize: 13,
     marginTop: 2,
   },
