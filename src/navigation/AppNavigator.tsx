@@ -14,7 +14,11 @@ import { products } from '../data/products';
 
 const Stack = createStackNavigator<AppStackParamList>();
 
-export const AppNavigator = () => {
+interface AppNavigatorProps {
+  token: string;
+}
+
+export const AppNavigator: React.FC<AppNavigatorProps> = ({ token }) => {
   const { theme, toggleTheme } = useTheme();
   const { logout } = useAuth(); 
 
@@ -32,20 +36,16 @@ export const AppNavigator = () => {
     >
       <Stack.Screen
         name="ProductsList"
-        component={ProductsListScreen}
         options={{
           title: 'E-Shop',
           headerRight: () => (
             <View style={{ flexDirection: 'row', alignItems: 'center', marginRight: 16 }}>
-              {}
               <TouchableOpacity onPress={toggleTheme} style={{ marginRight: 16 }}>
                 <Image
                   source={theme === 'dark' ? LightMode : DarkMode}
                   style={{ width: 24, height: 24 }}
                 />
               </TouchableOpacity>
-
-              {}
               <TouchableOpacity onPress={logout}>
                 <Image
                   source={theme === 'dark' ? DarkLogout : LightLogout}
@@ -55,7 +55,9 @@ export const AppNavigator = () => {
             </View>
           ),
         }}
-      />
+      >
+        {props => <ProductsListScreen {...props} token={token} />}
+      </Stack.Screen>
       <Stack.Screen
         name="ProductDetails"
         component={ProductDetailsScreen}

@@ -7,12 +7,13 @@ import { useAuth } from '../context/AuthContext';
 const Stack = createStackNavigator<RootStackParamList>();
 
 export const RootNavigator = () => {
-  const { isAuthenticated } = useAuth();
-
+  const { isAuthenticated, token } = useAuth(); 
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
       {isAuthenticated ? (
-        <Stack.Screen name="App" component={AppNavigator} />
+        <Stack.Screen name="App">
+          {props => <AppNavigator {...props} token={token || ''} />}
+        </Stack.Screen>
       ) : (
         <Stack.Screen name="Auth" component={AuthNavigator} />
       )}

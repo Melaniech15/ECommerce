@@ -13,7 +13,16 @@ export const products: Product[] = [
       }
     ],
     model: '',
-    category: ''
+    category: '',
+    location: {
+      latitude: 0,
+      longitude: 0
+    },
+    owner: {
+      _id: '',
+      name: '',
+      email: ''
+    }
   },
   {
     "_id": "0002",
@@ -27,7 +36,16 @@ export const products: Product[] = [
       }
     ],
     model: '',
-    category: ''
+    category: '',
+    location: {
+      latitude: 0,
+      longitude: 0
+    },
+    owner: {
+      _id: '',
+      name: '',
+      email: ''
+    }
   },
   {
     "_id": "0003",
@@ -41,7 +59,16 @@ export const products: Product[] = [
       }
     ],
     model: '',
-    category: ''
+    category: '',
+    location: {
+      latitude: 0,
+      longitude: 0
+    },
+    owner: {
+      _id: '',
+      name: '',
+      email: ''
+    }
   },
   {
     "_id": "0004",
@@ -55,7 +82,16 @@ export const products: Product[] = [
       }
     ],
     model: '',
-    category: ''
+    category: '',
+    location: {
+      latitude: 0,
+      longitude: 0
+    },
+    owner: {
+      _id: '',
+      name: '',
+      email: ''
+    }
   },
   {
     "_id": "0005",
@@ -69,7 +105,16 @@ export const products: Product[] = [
       }
     ],
     model: '',
-    category: ''
+    category: '',
+    location: {
+      latitude: 0,
+      longitude: 0
+    },
+    owner: {
+      _id: '',
+      name: '',
+      email: ''
+    }
   },
   {
     "_id": "0006",
@@ -83,7 +128,16 @@ export const products: Product[] = [
       }
     ],
     model: '',
-    category: ''
+    category: '',
+    location: {
+      latitude: 0,
+      longitude: 0
+    },
+    owner: {
+      _id: '',
+      name: '',
+      email: ''
+    }
   },
   {
     "_id": "0007",
@@ -97,7 +151,16 @@ export const products: Product[] = [
       }
     ],
     model: '',
-    category: ''
+    category: '',
+    location: {
+      latitude: 0,
+      longitude: 0
+    },
+    owner: {
+      _id: '',
+      name: '',
+      email: ''
+    }
   },
   {
     "_id": "0008",
@@ -111,7 +174,16 @@ export const products: Product[] = [
       }
     ],
     model: '',
-    category: ''
+    category: '',
+    location: {
+      latitude: 0,
+      longitude: 0
+    },
+    owner: {
+      _id: '',
+      name: '',
+      email: ''
+    }
   },
   {
     "_id": "0009",
@@ -125,6 +197,15 @@ export const products: Product[] = [
       }
     ],
     model: '',
-    category: ''
+    category: '',
+    location: {
+      latitude: 0,
+      longitude: 0
+    },
+    owner: {
+      _id: '',
+      name: '',
+      email: ''
+    }
   }
 ];

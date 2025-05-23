@@ -72,7 +72,7 @@ export const ProductDetailsScreen: React.FC<ProductDetailsScreenProps> = ({ rout
       
 
       <ScrollView style={[styles.container, { backgroundColor: colors.background }]} showsVerticalScrollIndicator={false}>
-        {}
+        {/* Product Image */}
         <View style={[styles.imageContainer, { backgroundColor: colors.imageBackground }]}>
           <Image 
             source={{ uri: product.images[0]?.url || 'https://fdn2.gsmarena.com/vv/pics/sony/sony-xperia-1-v-1.jpg' }} 
@@ -81,7 +81,7 @@ export const ProductDetailsScreen: React.FC<ProductDetailsScreenProps> = ({ rout
           />
         </View>
 
-        {}
+        {/* Product Details */}
         <View style={styles.details}>
           <Text style={[styles.title, { color: colors.text }]}>
             {product.title}
@@ -96,7 +96,7 @@ export const ProductDetailsScreen: React.FC<ProductDetailsScreenProps> = ({ rout
           </Text>
         </View>
 
-        {}
+        {/* Spacer for bottom navigation */}
         <View style={{ height: 80 }} />
       </ScrollView>
 
@@ -104,19 +104,19 @@ export const ProductDetailsScreen: React.FC<ProductDetailsScreenProps> = ({ rout
         style={[
           styles.bottomNavigation,
           {
-            backgroundColor: currentTheme.card,
-            borderTopColor: currentTheme.border,
+            backgroundColor: currentTheme.colors.card, // Corrected from currentTheme.card
+            borderTopColor: currentTheme.colors.border, // Corrected from currentTheme.border
           },
         ]}
       >
         <TouchableOpacity style={styles.navItem}>
           <Image source={theme === 'dark' ? DarkHome : LightHome} style={styles.navIcon} />
-          <Text style={[styles.navText, { color: currentTheme.text }]}>Home</Text>
+          <Text style={[styles.navText, { color: currentTheme.colors.text }]}>Home</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={[styles.navItem, styles.activeNavItem]}>
           <Image source={theme === 'dark' ? DarkBrowse : LightBrowser} style={styles.navIcon} />
-          <Text style={[styles.navText, styles.activeNavText, { color: currentTheme.text }]}>
+          <Text style={[styles.navText, styles.activeNavText, { color: currentTheme.colors.text }]}> {/* Corrected */}
             Browse
           </Text>
         </TouchableOpacity>
@@ -128,17 +128,17 @@ export const ProductDetailsScreen: React.FC<ProductDetailsScreenProps> = ({ rout
               <Text style={styles.favCountText}>6</Text>
             </View>
           </View>
-          <Text style={[styles.navText, { color: currentTheme.text }]}>Favourites</Text>
+          <Text style={[styles.navText, { color: currentTheme.colors.text }]}>Favourites</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.navItem}>
           <Image source={theme === 'dark' ? DarkCart : LightCart} style={styles.navIcon} />
-          <Text style={[styles.navText, { color: currentTheme.text }]}>Cart</Text>
+          <Text style={[styles.navText, { color: currentTheme.colors.text }]}>Cart</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.navItem}>
           <Image source={theme === 'dark' ? DarkProfile : LightProfile} style={styles.navIcon} />
-          <Text style={[styles.navText, { color: currentTheme.text }]}>Profile</Text>
+          <Text style={[styles.navText, { color: currentTheme.colors.text }]}>Profile</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
